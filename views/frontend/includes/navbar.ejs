@@ -1,0 +1,56 @@
+<body class="layout-h layout-fixed">
+<div class="wrapper">
+    <!-- top navbar-->
+    <header class="topnavbar-wrapper">
+        <!-- START Top Navbar-->
+        <nav role="navigation" class="navbar topnavbar navbar-fixed-top" style="background:#364459;padding: 0px;padding-top: 15px;">
+            <!-- START navbar header-->
+            <div class="navbar-header hidden-xs" style="background:#364459;margin: auto;margin-right: auto; padding-top:5px;">
+                <a href="#/" class="navbar-brand">
+                    <div class="brand-logo">
+                        <img src="/images/logo.png" alt="App Logo" class="img-responsive">
+                    </div>
+                </a>
+            </div>
+            <!-- END navbar header-->
+            <!-- START Nav wrapper-->
+            <div class="nav-wrapper">
+                <!-- START Left navbar-->
+                <div class="hidden-xs" style="margin: auto;margin-right: auto; padding-top:5px;">
+                    <ul class="nav navbar-nav ls-md" >
+
+                        <li ><a  data-trigger-resize href="/">Home</a> </li>
+                        <li><a data-trigger-resize href="category/samsung">Samsung</a></li>
+                    </ul>
+                </div>
+
+                <!-- END Left navbar-->
+                <!-- START Right Navbar-->
+                <ul class="nav navbar-nav navbar-right" style="margin: auto;margin-right: auto; padding-bottom:5px;">
+                    <!-- Search icon-->
+                    <% if(user != undefined) { %>
+                    <li>
+                        <a href="/profile">
+                            <em class="icon-user fa-2x"></em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/profile/post">
+                            <i class="fa fa-pencil fa-2x"></i>
+                        </a>
+                    </li>
+                    <% } else { %>
+                    <li>
+                        <a href="/login">
+                            <em class="icon-lock fa-2x"></em>
+                        </a>
+                    </li>
+                    <% } %>
+
+                </ul>
+                <!-- END Right Navbar-->
+            </div>
+            <!-- END Nav wrapper-->
+        </nav>
+        <!-- END Top Navbar-->
+    </header>
