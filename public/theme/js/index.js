@@ -61,7 +61,7 @@ var getUrlParameter = function getUrlParameter(sParam) {
         }
     }
 };
-var base_url = `http://localhost:1337/`
+var base_url = `http://139.59.6.47:1337/`
 var token = readCookie("token");
 var user = readCookie("userId");
 $(window).load(function () {
