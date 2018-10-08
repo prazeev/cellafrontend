@@ -39,6 +39,7 @@ $(function() {
             data: $('.loginForm').serialize(),
             success: function(output) {
                 $("#loginSubmit").prop("disabled",false)
+                console.log(output)
                 createCookie("token",output.jwt, 999999)
                 createCookie("Fullname",output.user.Fullname, 999999)
                 createCookie("userId", output.user.id, 999999)
