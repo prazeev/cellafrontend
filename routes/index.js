@@ -28,6 +28,20 @@ router.get('/profile', function (req, res, next) {
         title: "Profile | Adifier"
     })
 });
+
+router.get('/profile/setting', function (req, res, next) {
+    helper.loadIndex(res, 'frontend/page/profile', {
+        title: "Profile | Adifier"
+    })
+});
+
+router.get('/profile/logout', function (req, res, next) {
+    helper.loadIndex(res, 'frontend/page/profile', {
+        title: "Profile | Adifier"
+    })
+});
+
+
 router.get('/category/:id', function(req, res, next) {
     helper.loadIndex(res, 'frontend/site/category', {
         title: "Single Page"
