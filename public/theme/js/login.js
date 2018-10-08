@@ -28,7 +28,7 @@ $(function() {
     function eraseCookie(name) {
         createCookie(name, "", -1);
     }
-    var base_url = "http://139.59.6.47:1337/"
+    var base_url = "http://139.59.8.47:1337/"
     $(".loginForm").submit(function(e) {
         e.preventDefault();
         $("#loginSubmit").prop("disabled",true)
